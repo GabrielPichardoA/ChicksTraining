@@ -1,0 +1,38 @@
+﻿@model IEnumerable<StatesAndCapitalsQuiz_DataAccess.Models.State>
+
+@{
+    ViewBag.Title = "States List";
+}
+
+<h2>States List</h2>
+
+<p>
+    @Html.ActionLink("Insert a new State", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.State1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capital)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.State1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Capital)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Update", new { StateId = item.StateId }) |
+            @Html.ActionLink("Delete", "Delete", new { StateId = item.StateId })
+        </td>
+    </tr>
+}
+
+</table>

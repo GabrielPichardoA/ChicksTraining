@@ -1,0 +1,15 @@
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalQuiz_Bussines.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalQuiz_Bussines.pdb
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalQuiz_Dto.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalQuiz_Dto.pdb
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\obj\Debug\StatesAndCapitalQuiz_Bussines.csproj.AssemblyReference.cache
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\obj\Debug\StatesAndCapitalQuiz_Bussines.csproj.CoreCompileInputs.cache
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\obj\Debug\StatesAndCapitalQuiz_Bussines.csproj.CopyComplete
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\obj\Debug\StatesAndCapitalQuiz_Bussines.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\obj\Debug\StatesAndCapitalQuiz_Bussines.pdb
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalQuiz_Bussines.dll.config
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalsQuiz_DataAccess.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\EntityFramework.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalsQuiz_DataAccess.pdb
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\StatesAndCapitalsQuiz_DataAccess.dll.config
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Bussines\bin\Debug\EntityFramework.xml

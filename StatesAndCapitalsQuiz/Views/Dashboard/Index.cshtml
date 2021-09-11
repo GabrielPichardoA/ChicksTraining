@@ -1,0 +1,39 @@
+﻿@model List<StatesAndCapitalsQuiz_DataAccess.Models.TestResult>
+
+@{
+    ViewBag.Title = "UserDashBoard";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div class="container" ng-app="myApp" ng-controller="myCtrl" ng-init="GetStates()">
+
+    <div class="row">
+        <input type="button" class="btn btn-primary" value="Reload Questions" ng-click="GetStates()" />
+    </div>
+
+    <div class="row">
+        <h3>Please answer with the capital of folowing states:</h3>
+    </div>
+
+    <ul id="questions" class="text-center">
+        <li style="list-style:none; " ng-repeat="x in questions">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col col-md-6 text-left">
+                        <span style="font-size: large">{{"Wich is the Capital of " + x + "?"}}</span>
+                    </div>
+                    <div class="col col-md-6">
+                        <input style="text-align: right; font-size: large" ng-attr-id="{{x}}" ng-value="" ng-attr-name="{{x}}" type="text" />
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <input type="button" class="btn btn-primary" value="Send Responses" ng-click="SendResponses()" />
+</div>
+
+
+
+<script src="~/Scripts/Dashboard/Index.js"></script>

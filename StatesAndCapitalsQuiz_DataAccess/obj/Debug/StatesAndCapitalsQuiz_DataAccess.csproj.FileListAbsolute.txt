@@ -1,0 +1,11 @@
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\StatesAndCapitalsQuiz_DataAccess.dll.config
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\StatesAndCapitalsQuiz_DataAccess.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\StatesAndCapitalsQuiz_DataAccess.pdb
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.CopyComplete
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.dll
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.pdb

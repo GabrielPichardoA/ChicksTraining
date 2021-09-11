@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StatesAndCapitalsModelStoreContainer" CdmEntityContainer="DB_Entities">
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="StatesAndCapitalsModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="State1" ColumnName="State" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestResults">
+      <EntityTypeMapping TypeName="StatesAndCapitalsModel.TestResult">
+        <MappingFragment StoreEntitySet="TestResult">
+          <ScalarProperty Name="TestResultId" ColumnName="TestResultId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TestDateTime" ColumnName="TestDateTime" />
+          <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+          <ScalarProperty Name="NumberCorrect" ColumnName="NumberCorrect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="StatesAndCapitalsModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Profile">
+      <EntityTypeMapping TypeName="StatesAndCapitalsModel.User_Profile">
+        <MappingFragment StoreEntitySet="User_Profile">
+          <ScalarProperty Name="admin" ColumnName="admin" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProfileId" ColumnName="ProfileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="attemps">
+      <EntityTypeMapping TypeName="StatesAndCapitalsModel.attemp">
+        <MappingFragment StoreEntitySet="attemps">
+          <ScalarProperty Name="FailedAttempts" ColumnName="FailedAttempts" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
