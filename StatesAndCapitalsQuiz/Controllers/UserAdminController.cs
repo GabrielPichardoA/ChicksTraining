@@ -13,9 +13,14 @@ namespace StatesAndCapitalsQuiz.Controllers
         // GET: UserAdmin
         public ActionResult Index()
         {
-            return View(db.Users.ToList());
+            return Session["Perfil"].ToString() == "True" ? View(db.Users.ToList()) : View("../Shared/Unauthorized");
         }
 
+        /// <summary>
+        /// Method to Activate User if blocked.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>View to display current list of users.</returns>
         [HttpGet]
         public ActionResult ActivateUser(int id)
         {
@@ -26,6 +31,42 @@ namespace StatesAndCapitalsQuiz.Controllers
             return RedirectToAction("/Index");
         }
 
+        /// <summary>
+        /// Method to add admin perfil to an normal user.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Current view.</returns>
+        public ActionResult SetAdminUser(int id)
+        {
+            User user = new User()
+            {
+                UserId = id
+            };
+            var objProfile = db.User_Profile.Where(x => x.UserId == user.UserId).SingleOrDefault();
+
+            if(objProfile != null)
+            {
+                return RedirectToAction("/Index");
+            }
+            else
+            {
+                User_Profile profile = new User_Profile()
+                {
+                    admin = true,
+                    UserId = id
+                };
+                db.User_Profile.Add(profile);
+                db.SaveChanges();
+            }
+
+            return RedirectToAction("/Index");
+        }
+
+        /// <summary>
+        /// Method to delete an User.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Current view to update records.</returns>
         [HttpGet]
         public ActionResult Delete(int id)
         {

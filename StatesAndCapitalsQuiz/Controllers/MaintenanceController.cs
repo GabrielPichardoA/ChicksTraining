@@ -15,9 +15,14 @@ namespace StatesAndCapitalsQuiz.Controllers
         // GET: Maintenance
         public ActionResult Index()
         {
-            return View(db.States.ToList());
+            return Session["Perfil"].ToString() == "True" ? View(db.States.ToList()) : View("../Shared/Unauthorized");
         }
 
+        /// <summary>
+        /// Method to update data of the state.
+        /// </summary>
+        /// <param name="stateId"></param>
+        /// <returns>Current value of State object.</returns>
         public ActionResult Update(int? stateId)
         {
             if(stateId == null)
@@ -32,6 +37,11 @@ namespace StatesAndCapitalsQuiz.Controllers
             return View(state);
         }
 
+        /// <summary>
+        /// Update in DataBase the data of the current object.
+        /// </summary>
+        /// <param name="state"></param>
+        /// <returns>The view with the state.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Update([Bind(Include = "StateId,State1,Capital")] State state)
@@ -45,6 +55,11 @@ namespace StatesAndCapitalsQuiz.Controllers
             return View(state);
         }
 
+        /// <summary>
+        /// Method to delete data of the state.
+        /// </summary>
+        /// <param name="stateId"></param>
+        /// <returns>Current value of State object.</returns>
         public ActionResult Delete(int? stateId)
         {
             if (stateId == null)
@@ -59,6 +74,11 @@ namespace StatesAndCapitalsQuiz.Controllers
             return View(state);
         }
 
+        /// <summary>
+        /// Delete in Database the data of the current object.
+        /// </summary>
+        /// <param name="stateId"></param>
+        /// <returns>The principal view to update the list.</returns>
         // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -75,9 +95,11 @@ namespace StatesAndCapitalsQuiz.Controllers
             return View();
         }
 
-        // POST: Users/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Method to create a new State
+        /// </summary>
+        /// <param name="state"></param>
+        /// <returns>Return value of State object.</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "StateId,State1,Capital")] State state)

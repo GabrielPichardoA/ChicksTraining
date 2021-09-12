@@ -11,10 +11,13 @@ namespace StatesAndCapitalsQuiz_DataAccess.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class State
     {
+        [DisplayName("State Id")]
         public int StateId { get; set; }
+        [DisplayName("State")]
         public string State1 { get; set; }
         public string Capital { get; set; }
     }

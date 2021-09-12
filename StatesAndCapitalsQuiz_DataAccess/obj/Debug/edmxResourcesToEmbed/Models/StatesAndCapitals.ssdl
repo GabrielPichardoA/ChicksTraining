@@ -34,8 +34,6 @@
     <Property Name="UserName" Type="nvarchar" MaxLength="255" />
     <Property Name="Password" Type="nvarchar" MaxLength="255" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'StatesAndCapitals.dbo.User_Profile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="User_Profile">
     <Key>
       <PropertyRef Name="ProfileId" />
@@ -61,13 +59,7 @@ warning 6002: The table/view 'StatesAndCapitals.dbo.User_Profile' does not have 
     <EntitySet Name="State" EntityType="Self.State" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TestResult" EntityType="Self.TestResult" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="User_Profile" EntityType="Self.User_Profile" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [User_Profile].[ProfileId] AS [ProfileId], 
-    [User_Profile].[UserId] AS [UserId], 
-    [User_Profile].[admin] AS [admin]
-    FROM [dbo].[User_Profile] AS [User_Profile]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="User_Profile" EntityType="Self.User_Profile" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_TestResult_User" Association="Self.FK_TestResult_User">
       <End Role="User" EntitySet="User" />
       <End Role="TestResult" EntitySet="TestResult" />

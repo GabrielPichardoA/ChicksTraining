@@ -11,12 +11,12 @@ namespace StatesAndCapitalsQuiz.Controllers
     {
         DB_Entities db = new DB_Entities();
 
-        // GET: Dashboard
+        // Return view depends on the user/profile.
         public ActionResult Index()
         {
-            if(Session["UserName"] != null)
+            if (Session["UserName"] != null)
             {
-                if (Session["Perfil"] != null)
+                if (Session["Perfil"].ToString() == "True")
                 {
                     return RedirectToAction("../Maintenance");
                 }
@@ -33,11 +33,29 @@ namespace StatesAndCapitalsQuiz.Controllers
             {
                 return RedirectToAction("../Login");
             }
-            
+
         }
 
-        [HttpGet]
-        public JsonResult getStates()
+        /// <summary>
+        /// Return test result for the UserId Logged.
+        /// </summary>
+        public ActionResult TestResults()
+        {
+            TestResult test = new TestResult()
+            {
+                UserId = int.Parse(Session["UserId"].ToString())
+            };
+            var obj = db.TestResults.Where(x => x.UserId == test.UserId).ToList();
+            return View(obj);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="q"></param>
+        /// <returns>Return list of States tha will be asking for in the Quiz..</returns>
+        [HttpPost]
+        public JsonResult getStates(int q)
         {
             List<State> states = new List<State>();
 
@@ -45,7 +63,7 @@ namespace StatesAndCapitalsQuiz.Controllers
             {
                 using (DB_Entities db = new DB_Entities())
                 {
-                    states = db.States.OrderBy(x => Guid.NewGuid()).Take(10)
+                    states = db.States.OrderBy(x => Guid.NewGuid()).Take(q)
                         .ToList();
 
                     states.Select(s => s.StateId);
@@ -55,6 +73,12 @@ namespace StatesAndCapitalsQuiz.Controllers
             return this.Json(states.Select(s => s.State1), JsonRequestBehavior.AllowGet);
         }
 
+        /// <summary>
+        /// Post to save the result of the quiz.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="TotalQuestions"></param>
+        /// <returns>Quantity of the correct asnwers.</returns>
         public JsonResult SendResponses(List<QuizRequest> request, int TotalQuestions)
         {
             int correct = 0;

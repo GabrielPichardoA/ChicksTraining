@@ -16,6 +16,7 @@ namespace StatesAndCapitalsQuiz.Controllers
             return View();
         }
 
+        //Method to Activate user if blocked
         public RedirectToRouteResult ActivateUser()
         {
             int value = Int32.Parse(Session["BlockedUser"].ToString());

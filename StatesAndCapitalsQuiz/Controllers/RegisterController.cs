@@ -15,7 +15,11 @@ namespace StatesAndCapitalsQuiz.Controllers
             return View();
         }
 
-
+        /// <summary>
+        /// Method to create a new user in Database.
+        /// </summary>
+        /// <param name="objUser"></param>
+        /// <returns>View to be display to user.</returns>
         public ActionResult CreateUser(User objUser)
         {
             using (DB_Entities db = new DB_Entities())

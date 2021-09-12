@@ -11,10 +11,12 @@ namespace StatesAndCapitalsQuiz_DataAccess.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class attemp
     {
         public int Id { get; set; }
+        [DisplayName("User Id")]
         public Nullable<int> UserId { get; set; }
         public Nullable<int> FailedAttempts { get; set; }
     }

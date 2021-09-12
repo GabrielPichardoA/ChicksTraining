@@ -11,13 +11,19 @@ namespace StatesAndCapitalsQuiz_DataAccess.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class TestResult
     {
+        [DisplayName("Test Result Id")]
         public int TestResultId { get; set; }
+        [DisplayName("User Id")]
         public Nullable<int> UserId { get; set; }
+        [DisplayName("Test Date")]
         public Nullable<System.DateTime> TestDateTime { get; set; }
+        [DisplayName("Total Questions")]
         public Nullable<int> TotalQuestions { get; set; }
+        [DisplayName("Result")]
         public Nullable<int> NumberCorrect { get; set; }
     
         public virtual User User { get; set; }

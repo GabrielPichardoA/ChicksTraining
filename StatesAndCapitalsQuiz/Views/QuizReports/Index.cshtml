@@ -25,29 +25,32 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TestDateTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TotalQuestions)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NumberCorrect)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.User.UserName)
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalQuestions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberCorrect)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+        </tr>
+    }
+
+
+    <div class="container" ng-app="myApp" ng-controller="myCtrl">
+        <div style="float:right">
+            <input type="button" value="Print Report" class="btn btn-primary" ng-click="Print()" />
+        </div>
+    </div>
+
 
 </table>
-
-<div class="container" ng-app="myApp" ng-controller="myCtrl" >
-    <div style="float:right">
-        <input type="button" value="Print Report" class="btn btn-primary" ng-click="Print()" />
-    </div>
-</div>
 
 <script src="~/Scripts/QuizReports/Index.js"></script>

@@ -165,7 +165,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\QuizReports\Index.js" />
-    <Content Include="Scripts\User\Index.js" />
+    <None Include="Views\Shared\Unauthorized.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -188,6 +188,7 @@
     <Content Include="Views\BlockedUser\Index.cshtml" />
     <Content Include="Views\UserAdmin\Index.cshtml" />
     <Content Include="Views\QuizReports\Index.cshtml" />
+    <Content Include="Views\Dashboard\TestResults.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,8 +7,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 <div class="container" ng-app="myApp" ng-controller="myCtrl" ng-init="GetStates()">
-
+    <br />
     <div class="row">
+        <span style="font-size: large">Specify # of questions to ask:</span>
+        <input type="text" value="{{quantity}}" id="quantity" />
         <input type="button" class="btn btn-primary" value="Reload Questions" ng-click="GetStates()" />
     </div>
 

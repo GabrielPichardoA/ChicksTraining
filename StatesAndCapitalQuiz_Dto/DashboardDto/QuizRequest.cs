@@ -1,4 +1,6 @@
-﻿
+﻿/// <summary>
+/// class to hande request
+/// </summary>
 namespace DashboardDto
 {
     public class QuizRequest

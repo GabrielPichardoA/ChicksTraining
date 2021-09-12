@@ -11,11 +11,15 @@ namespace StatesAndCapitalsQuiz_DataAccess.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class User_Profile
     {
+        [DisplayName("Profile Id")]
         public int ProfileId { get; set; }
+        [DisplayName("User Id")]
         public Nullable<int> UserId { get; set; }
+        [DisplayName("Admin")]
         public Nullable<bool> admin { get; set; }
     }
 }

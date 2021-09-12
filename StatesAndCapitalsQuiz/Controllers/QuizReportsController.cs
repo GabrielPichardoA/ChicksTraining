@@ -13,7 +13,7 @@ namespace StatesAndCapitalsQuiz.Controllers
         // GET: QuizReports
         public ActionResult Index()
         {
-            return View(db.TestResults.ToList());
+            return Session["Perfil"].ToString() == "True" ? View(db.TestResults.ToList()) : View("../Shared/Unauthorized");
         }
     }
 }

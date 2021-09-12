@@ -21,3 +21,4 @@ C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess
 C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.CopyComplete
 C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.dll
 C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.pdb
+C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.AssemblyReference.cache

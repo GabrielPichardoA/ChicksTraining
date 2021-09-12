@@ -6,33 +6,42 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-    <table class="table">
+<h2>User Administration</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserName)
-            </th>
-            <th></th>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @if (item.UserId.ToString() != Session["UserId"].ToString())
+                {
+                    @Html.ActionLink("Delete", "Delete", new { id = item.UserId }) <text> | </text>
+                    @Html.ActionLink("Unlock", "ActivateUser", new { id = item.UserId }) <text> | </text>
+                    @Html.ActionLink("Set Admin User", "SetAdminUser", new { id = item.UserId })
+                }
+
+            </td>
         </tr>
+    }
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UserId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.UserName)
-                </td>
-                <td>
-                    @Html.ActionLink("Delete", "Delete", new { id = item.UserId }) |
-                    @Html.ActionLink("Unlock", "ActivateUser", new { id = item.UserId })
-                </td>
-            </tr>
-        }
-
-    </table>
+</table>
 
 
