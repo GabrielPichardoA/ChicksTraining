@@ -1,0 +1,53 @@
+﻿@model IEnumerable<StatesAndCapitalsQuiz_DataAccess.Models.TestResult>
+
+@{
+    ViewBag.Title = "Quiz Reports";
+}
+
+<h2>Quiz Reports</h2>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TestDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalQuestions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberCorrect)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TestDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalQuestions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberCorrect)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+    </tr>
+}
+
+</table>
+
+<div class="container" ng-app="myApp" ng-controller="myCtrl" >
+    <div style="float:right">
+        <input type="button" value="Print Report" class="btn btn-primary" ng-click="Print()" />
+    </div>
+</div>
+
+<script src="~/Scripts/QuizReports/Index.js"></script>

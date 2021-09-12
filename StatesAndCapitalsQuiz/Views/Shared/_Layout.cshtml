@@ -14,16 +14,22 @@
                 @Html.ActionLink("States and Capitals Quiz", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 @if (Session["UserName"] != null)
                 {
-                    <div style="float:right">
-                        @Html.ActionLink("Logout", "Logout", "Login", new { area = "" }, new { @class = "navbar-brand" })
-                    </div>
+                <div style="float:right">
+                    @Html.ActionLink("Logout", "Logout", "Login", new { area = "" }, new { @class = "navbar-brand" })
+                    @if (Session["Perfil"].ToString() != null)
+                    {
+                        @Html.ActionLink("User Admin", "Index", "UserAdmin", new { area = "" }, new { @class = "navbar-brand" })
+                    }
+                </div>
                 }
                 else
                 {
-                    <div style="float:right">
-                        @Html.ActionLink("Login", "Index", "Login", new { area = "" }, new { @class = "navbar-brand" })
-                    </div>
+            <div style="float:right">
+                
+                @Html.ActionLink("Login", "Index", "Login", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
                 }
+
 
             </div>
         </div>

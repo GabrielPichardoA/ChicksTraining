@@ -3,3 +3,9 @@ C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCap
 C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.csproj.CoreCompileInputs.cache
 C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.dll
 C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.pdb
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalQuiz_Dto\bin\Debug\StatesAndCapitalQuiz_Dto.dll
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalQuiz_Dto\bin\Debug\StatesAndCapitalQuiz_Dto.pdb
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.dll
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalQuiz_Dto\obj\Debug\StatesAndCapitalQuiz_Dto.pdb

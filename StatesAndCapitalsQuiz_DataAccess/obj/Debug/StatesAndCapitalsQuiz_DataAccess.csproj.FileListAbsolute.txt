@@ -9,3 +9,15 @@ C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCap
 C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.CopyComplete
 C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.dll
 C:\Users\elgab\OneDrive\Escritorio\Repository\StatesAndCapitalsQuiz\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.pdb
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\StatesAndCapitalsQuiz_DataAccess.dll.config
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\StatesAndCapitalsQuiz_DataAccess.dll
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\StatesAndCapitalsQuiz_DataAccess.pdb
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.csproj.CopyComplete
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.dll
+C:\Users\DELL\Desktop\Repository\ChicksTraining\StatesAndCapitalsQuiz_DataAccess\obj\Debug\StatesAndCapitalsQuiz_DataAccess.pdb
