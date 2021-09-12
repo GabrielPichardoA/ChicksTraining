@@ -52,7 +52,7 @@ app.controller("myCtrl", function ($scope, $http) {
 
         $http(req).then(response => {
             if (response.data.result) {
-                alert("Result have been saved, Grad: " + response.data.data);
+                alert("Result have been saved, Grad: " + response.data.data + "/" + questions.length + ".");
                 $scope.GetStates();
             };
         });
