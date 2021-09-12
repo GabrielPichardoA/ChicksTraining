@@ -85,7 +85,7 @@ namespace StatesAndCapitalsQuiz.Controllers
 
             foreach (QuizRequest q in request)
             {
-                var assert = db.States.SingleOrDefault(x => x.State1.Equals(q.state) && x.Capital.Equals(q.capital));
+                var assert = db.States.SingleOrDefault(x => x.State1.Equals(q.state, StringComparison.CurrentCultureIgnoreCase) && x.Capital.Equals(q.capital));
                 if (assert != null)
                 {
                     correct++;

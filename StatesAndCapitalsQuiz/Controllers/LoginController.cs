@@ -44,7 +44,7 @@ namespace StatesAndCapitalsQuiz.Controllers
         /// <returns>return View to be execute on login methoh.</returns>
         public string validateLogin(User objUser)
         {
-            var obj = db.Users.Where(a => a.UserName.Equals(objUser.UserName) && a.Password.Equals(objUser.Password)).FirstOrDefault();
+            var obj = db.Users.Where(a => a.UserName.Equals(objUser.UserName, StringComparison.CurrentCultureIgnoreCase) && a.Password.Equals(objUser.Password)).FirstOrDefault();
             var objuser = db.Users.Where(a => a.UserName.Equals(objUser.UserName)).FirstOrDefault();
             var attemps = 0;
 
